@@ -1,0 +1,1711 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container-home {
+}
+
+/*TopBar Component ------------------------------------------------------------------------------------------------------------*/
+.container-home .topbar-container {
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.container-home .topbar-container .topbar-left{
+    display: flex; 
+}
+.container-home .topbar-container .topbar-left li{
+list-style: none;
+margin-right: 15px;
+text-transform: uppercase;
+}
+.container-home .topbar-container .topbar-right{
+    display: flex; 
+}
+.container-home .topbar-container .topbar-right li{
+    list-style: none;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+.container-home .topbar-container .topbar-right li:nth-child(1){
+display: flex;
+align-items: center;
+}
+.container-home .topbar-container .topbar-right li:nth-child(1) i {
+    margin-left: 5px;
+}
+@media screen and (max-width: 1024px) {
+    .container-home .topbar-container .topbar-right {
+       display: none;
+    }
+    .container-home .topbar-container{
+        justify-content: center;
+    }
+}
+/*topbar - promotion  ------------------------------------------------------------------------------------------------------------*/
+.container-home .topbar-promotion-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    background-color: #525252;
+    height: 40px;
+    align-items: center;
+    color:white;
+    font-size: 14px;
+}
+.container-home .topbar-promotion-container a{
+    color:white;
+    margin: 0 5px;
+}@media screen and (max-width: 687px) {
+    .container-home .topbar-promotion-container{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .container-home .topbar-promotion-container{
+        font-size: 10px;
+    }
+}
+/*Header ------------------------------------------------------------------------------------------------------------*/
+.container-home .header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #212121;
+    padding: 0 50px;   
+}
+.container-home .header-container .header-right-tablet{
+    color: white;
+    display: none;
+}
+.container-home .header-container .header-logo{
+    width: 76px;
+    height: 50px;
+    object-fit: cover;
+}
+.container-home .header-container .header-navlinks{
+    display: flex;
+    align-items: center;
+}
+.container-home .header-container .header-navlinks li  {
+    list-style: none;
+    padding : 20px 10px;
+}
+.container-home .header-container .header-navlinks li a{
+    text-decoration: none;
+    color:white;
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+.container-home .header-container .header-navlinks li a img{
+    width: 81px;
+    height: 24px;
+}
+.container-home .header-container .header-user-handle{
+    display: flex;
+    color: white;   
+    align-items: center;
+}
+.container-home .header-container .header-user-handle .header-user-handle-search{
+    background-color: #E8E8E8;
+    border-radius: 25px;
+    padding: 10px 10px;
+}
+.container-home .header-container .header-user-handle .header-user-handle-search i {
+    color: black;
+    font-size: 15px;
+}
+.container-home .header-container .header-user-handle .header-user-handle-search input{
+    border: none;
+    background-color: #E8E8E8;
+}
+.container-home .header-container .header-user-handle .header-user-handle-search input:focus{
+    outline: none;
+}
+.container-home .header-container .header-user-handle .header-user-icons-user i {
+font-size: 20px;
+margin-left: 10px;
+}
+.container-home .header-container .header-user-handle .header-user-icons-bag {
+    position: relative;
+}
+.container-home .header-container .header-user-handle .header-user-icons-bag i {
+    font-size: 20px;
+    margin-left: 15px;
+}
+.container-home .header-container .header-user-handle .header-user-icons-bag span{
+    position: absolute;
+    border-radius: 50%;
+    background-color: yellow;
+    color: black;
+    font-size: 10px;
+    right: -5px;
+    bottom: -3px;
+    padding:  0 3px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+    .container-home .header-container .header-navlinks li{
+        display: none;
+    }
+    .container-home .header-container .header-user-handle .header-user-handle-search{
+        display: none;
+    }
+    .container-home .header-container .header-right-tablet{
+        display: block;
+    }
+    .container-home .header-container .header-right-tablet{
+        font-size: 20px;
+    }
+    .container-home .header-container .header-right-tablet i:nth-child(1){
+        margin-right: 10px;
+    }
+    .container-home .header-container .header-logo{
+        margin: 0 auto;
+    }
+    .container-home .header-container{
+        padding: 0 20px;
+    }
+   
+}
+
+
+/* Banner -----------------------------------------------------------------------------------*/
+.container-home .banner-container {
+    width: 100%;
+}
+.container-home .banner-container img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* NewProduct -----------------------------------------------------------------------------------*/
+.newProducts-container {
+    padding: 0 50px;
+    margin-top: 50px;
+}
+
+.newProducts-container .newProducts-top button:nth-child(1){
+    padding: 10px 20px;
+    border-radius: 40px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.newProducts-container .newProducts-top button:nth-child(2){
+    padding: 10px 20px;
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    border: 1px solid black;
+}
+.newProducts-container .newProducts-bottom{
+    margin-top: 20px;
+    
+}
+.newProducts-bottom-container{
+    display: flex;
+    justify-content: space-between;
+}
+.newProducts-container .newProducts-bottom {
+    position: relative;
+    width: 19%;
+}
+.newProducts-container .newProducts-bottom .newProducts-bottom-items .items-top{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+}
+.newProducts-container .newProducts-bottom .newProducts-bottom-items  img{
+    width: 100%;
+    border-radius: 10px;
+    height: 320px;
+    object-fit: cover;
+}
+.newProducts-container .newProducts-bottom .newProducts-bottom-items .items-top .items-top-left {
+    letter-spacing: -1px;
+    font-size: 13px;
+}
+.newProducts-container .newProducts-bottom .newProducts-bottom-items .items-top .items-top-left  span:nth-child(3){
+    color: #2F5ACF;
+    font-weight: 600;
+}
+.newProducts-container .newProducts-bottom .newProducts-bottom-items .items-top .items-top-right button{
+    background-color:#2F5ACF ;
+    border: none;
+    padding: 2px 5px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.newProducts-container .newProducts-bottom .newProducts-bottom-listColor{
+    display: flex;
+}
+.newProducts-container .newProducts-bottom .newProducts-bottom-listColor div:nth-child(1){
+    background: #2E3540;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    outline: 1px solid black;
+    outline-offset: 2px ;
+}
+.newProducts-container .newProducts-bottom .newProducts-bottom-listColor div:nth-child(2){
+    background: #E7E9EB;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.newProducts-container .newProducts-bottom .newProducts-bottom-listColor div:nth-child(3){
+    background: #E7E9EB;
+    width: 35px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.newProducts-container .newProducts-bottom .newProducts-bottom-listColor div:nth-child(4){
+    background: #32383F;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.newProducts-container .newProducts-bottom .newProducts-bottom-nameProduct{
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.newProducts-container .newProducts-bottom .newProducts-bottom-priceProduct span:nth-child(1){
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+.newProducts-container .newProducts-bottom .newProducts-bottom-priceProduct button{
+    background: #2F5ACF;
+    color:white;
+    font-size: 10px;
+    padding: 0 5px;
+    border-radius: 5px;
+    font-weight: 700;
+    border: 1px solid #2F5ACF;
+    margin-right: 5px;
+}
+.newProducts-container .newProducts-bottom .newProducts-bottom-priceProduct span:nth-child(3){
+    font-size: 12px;
+    font-weight: 300;
+   text-decoration: line-through;
+}
+@media screen and (max-width:687px){
+    .newProducts-container {
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+    .newProducts-container .newProducts-top button:nth-child(1){
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .newProducts-container .newProducts-top button:nth-child(2){
+        font-size: 14px;
+    }
+    .newProducts-displayNone-mobile{
+        display: none;
+    }
+    .newProducts-container .newProducts-bottom{
+        width: 48%;
+    }
+}
+@media screen and (max-width:1024px){
+    .newProducts-container {
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+    .newProducts-container .newProducts-top button:nth-child(1){
+        font-size: 14px;
+        margin-right: 5px;
+    }
+    .newProducts-container .newProducts-top button:nth-child(2){
+        font-size: 14px;
+    }
+    .newProducts-container .newProducts-bottom .newProducts-bottom-items  img{
+        height: 260px;
+    }
+}
+@media screen and (max-width:380px){
+    .newProducts-container .newProducts-top button:nth-child(1){
+        font-size: 12px;
+        margin-right: 5px;
+    }
+    .newProducts-container .newProducts-top button:nth-child(2){
+        font-size: 12px;
+    }
+    
+}
+/* <!--Banner Block container--> */
+.bannerBlock-container{
+    margin-top: 50px;
+    position: relative;
+}
+.bannerBlock-container img{
+    width: 100%;
+}
+.bannerBlock-container .bannerBlock-container-info{
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+}
+.bannerBlock-container .bannerBlock-container-info h2 {
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+.bannerBlock-container .bannerBlock-container-info p {
+    margin-bottom: 45px;
+}
+.bannerBlock-container .bannerBlock-container-info a {
+    text-decoration: none;
+    color: white;
+    background: #2F5ACF;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+@media screen  and  (max-width:380px) {
+    .bannerBlock-container img{
+        height: 300px;
+        object-fit: cover;
+    }
+    .bannerBlock-container .bannerBlock-container-info{
+        left: 20px;
+        bottom: 30%;
+    }
+    .bannerBlock-container .bannerBlock-container-info h2 {
+        font-size: 25px;
+    }
+    .bannerBlock-container .bannerBlock-container-info p{
+        font-size: 9px;
+    }
+    .bannerBlock-container .bannerBlock-container-info a{
+        padding: 8px 25px;
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 380px) and  (max-width:687px) {
+    .bannerBlock-container img{
+        height: 300px;
+        object-fit: cover;
+    }
+    .bannerBlock-container .bannerBlock-container-info{
+        left: 20px;
+        bottom: 30%;
+    }
+    .bannerBlock-container .bannerBlock-container-info h2 {
+        font-size: 30px;
+    }
+    .bannerBlock-container .bannerBlock-container-info p{
+        font-size: 10px;
+    }
+    .bannerBlock-container .bannerBlock-container-info a{
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 687px) and (max-width: 855px) {
+    .bannerBlock-container img {
+        height: 300px;
+        object-fit: cover;
+    }
+    .bannerBlock-container .bannerBlock-container-info {
+        left: 20px;
+        bottom: 30%;
+    }
+    .bannerBlock-container .bannerBlock-container-info h2 {
+        font-size: 40px;
+    }
+    .bannerBlock-container .bannerBlock-container-info p {
+        font-size: 14px;
+    }
+    .bannerBlock-container .bannerBlock-container-info a {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+}
+/* <!--Products Running - container--> */
+.productsRunning-container {
+    padding: 0 50px;
+    margin-top: 30px;
+}
+
+.productsRunning-container .productsRunning-top {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.productsRunning-container .productsRunning-top h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 650;
+}
+.productsRunning-container .productsRunning-top a{
+    text-transform: capitalize;
+    color: black;
+}
+.productsRunning-container .productsRunning-bottom{
+    margin-top: 20px;
+    
+}
+.productsRunning-bottom-container{
+    display: flex;
+    justify-content: space-between;
+}
+.productsRunning-container .productsRunning-bottom {
+    position: relative;
+    width: 24%;
+}
+.productsRunning-container .productsRunning-bottom .productsRunning-bottom-items .items-top{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+}
+.productsRunning-container .productsRunning-bottom .productsRunning-bottom-items  img{
+    width: 100%;
+    border-radius: 10px;
+    height: 395px;
+    object-fit: cover;
+}
+.productsRunning-container .productsRunning-bottom .productsRunning-bottom-items .items-top .items-top-left {
+    letter-spacing: -1px;
+    font-size: 13px;
+}
+.productsRunning-container .productsRunning-bottom .productsRunning-bottom-items .items-top .items-top-left  span:nth-child(3){
+    color: #2F5ACF;
+    font-weight: 600;
+}
+.productsRunning-container .productsRunning-bottom .productsRunning-bottom-items .items-top .items-top-right button{
+    background-color:#009739 ;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    letter-spacing: -0.5px;
+    font-size: 10px;
+    text-transform: capitalize;
+}
+.productsRunning-container .productsRunning-bottom .productsRunning-bottom-listColor{
+    display: flex;
+}
+.productsRunning-container .productsRunning-bottom .productsRunning-bottom-listColor1 div{
+    background: #4F3150;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    outline: 1px solid black;
+    outline-offset: 2px;
+}
+.productsRunning-container .productsRunning-bottom .productsRunning-bottom-listColor2 div{
+    background:#F14F7F;
+    width: 35px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    outline: 1px solid black;
+    outline-offset: 2px;
+}
+.productsRunning-container .productsRunning-bottom .productsRunning-bottom-listColor3 div{
+    background: #617966;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    outline: 1px solid black;
+    outline-offset: 2px;
+}
+.productsRunning-container .productsRunning-bottom .productsRunning-bottom-listColor4 div{
+    background: #38739F;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    outline: 1px solid black;
+    outline-offset: 2px;
+}
+.productsRunning-container .productsRunning-bottom .productsRunning-bottom-nameProduct{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.productsRunning-container .productsRunning-bottom .productsRunning-bottom-priceProduct span:nth-child(1){
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+.productsRunning-container .productsRunning-bottom .productsRunning-bottom-priceProduct button{
+    background: #2F5ACF;
+    color:white;
+    font-size: 10px;
+    padding: 0 5px;
+    border-radius: 5px;
+    font-weight: 700;
+    border: 1px solid #2F5ACF;
+    margin-right: 5px;
+}
+.productsRunning-container .productsRunning-bottom .productsRunning-bottom-priceProduct span:nth-child(3){
+    font-size: 14px;
+    font-weight: 300;
+   text-decoration: line-through;
+}
+.productsRunning-container  .productRunning-bottom-button button{
+text-transform: uppercase;
+font-size: 16px;
+padding: 10px 30px;
+border-radius: 20px;
+display: none;
+background-color: white;
+margin: 0 auto;
+margin-top: 20px;
+}
+@media screen and (max-width:687px){
+    .productsRunning-container {
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+    .productsRunning-displayNone-mobile{
+        display: none;
+    }
+    .productsRunning-container .productsRunning-bottom{
+        width: 48%;
+    }
+}
+@media screen and (max-width:1020px){
+    .productsRunning-container {
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+    .productsRunning-container .productsRunning-bottom .productsRunning-bottom-items  img{
+        height: 268px;
+        margin-bottom: 10px;
+    }
+    .productsRunning-container .productsRunning-top a{
+        display: none;
+
+    }
+    .productsRunning-container .productsRunning-top h3{
+        font-size: 18px;
+        font-weight: 650;
+    }
+    .productsRunning-container .productsRunning-bottom .productsRunning-bottom-items .items-top .items-top-right button{
+        padding: 2px 5px;
+        font-size: 8px;
+    }
+    .productsRunning-container .productsRunning-bottom .productsRunning-bottom-items .items-top{
+        top: 2px;
+    }
+    .productsRunning-container  .productRunning-bottom-button button{
+        display: block;
+    }
+    .productsRunning-container .productsRunning-bottom .productsRunning-bottom-nameProduct{
+        font-size: 11px;
+    }
+    .productsRunning-container .productsRunning-bottom .productsRunning-bottom-priceProduct span:nth-child(1){
+        font-size: 10px;
+    }
+    .productsRunning-container .productsRunning-bottom .productsRunning-bottom-priceProduct span:nth-child(3){
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:380px){
+    .productsRunning-container .productsRunning-bottom .productsRunning-bottom-items .items-top .items-top-left{
+        font-size: 10px;
+        margin-right: 5px;
+    }
+    .productsRunning-container .productsRunning-bottom .productsRunning-bottom-priceProduct span:nth-child(1){
+        font-size: 10px;
+    }
+    .productsRunning-container .productsRunning-bottom .productsRunning-bottom-priceProduct span:nth-child(3){
+        font-size: 10px;
+    }
+}
+
+
+/*      <!--Banner POLO SPORT container-->  --------------------------------------------------------*/
+.bannerPoloSport-container{
+    margin-top: 50px;
+    position: relative;
+}
+.bannerPoloSport-container img{
+    width: 100%;
+}
+.bannerPoloSport-container .bannerPoloSport-container-info{
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+}
+.bannerPoloSport-container .bannerPoloSport-container-info h2 {
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+.bannerPoloSport-container .bannerPoloSport-container-info p {
+    margin-bottom: 45px;
+    font-weight: 550;
+}
+.bannerPoloSport-container .bannerPoloSport-container-info a {
+    text-decoration: none;
+    color: white;
+    background: #2F5ACF;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+@media screen  and  (max-width:380px) {
+    .bannerPoloSport-container{
+        margin-top: 25px;
+    }
+    .bannerPoloSport-container img{
+        height: 300px;
+        object-fit: cover;
+    }
+    .bannerPoloSport-container .bannerPoloSport-container-info{
+        left: 20px;
+        bottom: 30%;
+    }
+    .bannerPoloSport-container .bannerPoloSport-container-info h2 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .bannerPoloSport-container .bannerPoloSport-container-info {
+        max-width: 250px; /* Đảm bảo không vượt quá 270px */
+      }
+      
+      .bannerPoloSport-container .bannerPoloSport-container-info p {
+        max-width: 100%; /* Đảm bảo không vượt quá chiều rộng của phần tử cha */
+        word-wrap: break-word; /* Tự động xuống dòng khi vượt quá */
+        font-size: 11px; /* Kích thước font chữ */
+        font-weight: 600;
+      }
+      .bannerPoloSport-container .bannerPoloSport-container-info a{
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 380px) and  (max-width:687px) {
+    .bannerPoloSport-container{
+        margin-top: 30px;
+    }
+    .bannerPoloSport-container img{
+        height: 300px;
+        object-fit: cover;
+    }
+    .bannerPoloSport-container .bannerPoloSport-container-info{
+        left: 20px;
+        bottom: 30%;
+    }
+    .bannerPoloSport-container .bannerPoloSport-container-info h2 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .bannerPoloSport-container .bannerPoloSport-container-info {
+        max-width: 280px; /* Đảm bảo không vượt quá 270px */
+      }
+      
+      .bannerPoloSport-container .bannerPoloSport-container-info p {
+        max-width: 100%; /* Đảm bảo không vượt quá chiều rộng của phần tử cha */
+        word-wrap: break-word; /* Tự động xuống dòng khi vượt quá */
+        font-size: 14px; /* Kích thước font chữ */
+        font-weight: 600;
+      }
+      
+    .bannerPoloSport-container .bannerPoloSport-container-info a{
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 687px) and (max-width: 913px) {
+    .bannerPoloSport-container{
+        margin-top: 35px;
+    }
+    .bannerPoloSport-container img {
+        height: 300px;
+        object-fit: cover;
+    }
+    .bannerPoloSport-container .bannerPoloSport-container-info {
+        left: 20px;
+        bottom: 30%;
+    }
+    .bannerPoloSport-container .bannerPoloSport-container-info h2 {
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .bannerPoloSport-container .bannerPoloSport-container-info {
+        max-width: 400px; /* Đảm bảo không vượt quá 270px */
+      }
+      
+      .bannerPoloSport-container .bannerPoloSport-container-info p {
+        max-width: 100%; /* Đảm bảo không vượt quá chiều rộng của phần tử cha */
+        word-wrap: break-word; /* Tự động xuống dòng khi vượt quá */
+        font-size: 14px; /* Kích thước font chữ */
+        font-weight: 600;
+      }
+      .bannerPoloSport-container .bannerPoloSport-container-info a{
+        padding: 10px 30px;
+        font-size: 15px;
+    }
+}
+
+
+
+/* <!--Product POLO SPORT container--> -----------------------------------------*/
+.productsPoloSport-container {
+    padding: 0 50px;
+    margin-top: 30px;
+}
+
+.productsPoloSport-container .productsPoloSport-top {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.productsPoloSport-container .productsPoloSport-top h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 650;
+}
+.productsPoloSport-container .productsPoloSport-top a{
+    text-transform: capitalize;
+    color: black;
+}
+.productsPoloSport-container .productsPoloSport-bottom{
+    margin-top: 20px;
+    
+}
+.productsPoloSport-bottom-container{
+    display: flex;
+    justify-content: space-between;
+}
+.productsPoloSport-container .productsPoloSport-bottom {
+    position: relative;
+    width: 24%;
+}
+.productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-items .items-top{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+}
+.productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-items  img{
+    width: 100%;
+    border-radius: 10px;
+    height: 395px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-items .items-top .items-top-left {
+    letter-spacing: -1px;
+    font-size: 13px;
+}
+.productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-items .items-top .items-top-left  span:nth-child(3){
+    color: #2F5ACF;
+    font-weight: 600;
+}
+.productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-items .items-top .items-top-right button{
+    background-color:#009739 ;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    letter-spacing: -0.5px;
+    font-size: 10px;
+    text-transform: capitalize;
+}
+.productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-listColor{
+    display: flex;
+}
+.productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-listColor1 div{
+    background: #A7A6AB;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    outline: 1px solid black;
+    outline-offset: 2px;
+}
+.productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-listColor2 div{
+    background:#FC805A;
+    width: 35px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    outline: 1px solid black;
+    outline-offset: 2px;
+}
+.productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-listColor3 div{
+    background: #9AADC2;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    outline: 1px solid black;
+    outline-offset: 2px;
+}
+.productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-listColor4 div{
+    background: #233941;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    outline: 1px solid black;
+    outline-offset: 2px;
+}
+.productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-nameProduct{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-priceProduct span:nth-child(1){
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+.productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-priceProduct button{
+    background: #2F5ACF;
+    color:white;
+    font-size: 10px;
+    padding: 0 5px;
+    border-radius: 5px;
+    font-weight: 700;
+    border: 1px solid #2F5ACF;
+    margin-right: 5px;
+}
+.productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-priceProduct span:nth-child(3){
+    font-size: 14px;
+    font-weight: 300;
+   text-decoration: line-through;
+}
+.productsPoloSport-container .productsPoloSport-bottom-button button{
+text-transform: uppercase;
+font-size: 16px;
+padding: 10px 30px;
+border-radius: 20px;
+display: none;
+background-color: white;
+margin: 0 auto;
+margin-top: 20px;
+}
+@media screen and (max-width:687px){
+    .productsPoloSport-container {
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+    .productsPoloSport-displayNone-mobile{
+        display: none;
+    }
+    .productsPoloSport-container .productsPoloSport-bottom{
+        width: 48%;
+    }
+}
+@media screen and (max-width:1020px){
+    .productsPoloSport-container {
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+    .productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-items  img{
+        height: 268px;
+        margin-bottom: 10px;
+    }
+    .productsPoloSport-container .productsPoloSport-top a{
+        display: none;
+
+    }
+    .productsPoloSport-container .productsPoloSport-top h3{
+        font-size: 18px;
+        font-weight: 650;
+    }
+    .productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-items .items-top .items-top-right button{
+        padding: 2px 5px;
+        font-size: 8px;
+    }
+    .productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-items .items-top{
+        top: 2px;
+    }
+    .productsPoloSport-container  .productsPoloSport-bottom-button button{
+        display: block;
+    }
+    .productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-nameProduct{
+        font-size: 11px;
+    }
+    .productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-priceProduct span:nth-child(1){
+        font-size: 10px;
+    }
+    .productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-priceProduct span:nth-child(3){
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:380px){
+    .productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-items .items-top .items-top-left{
+        font-size: 10px;
+        margin-right: 5px;
+    }
+    .productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-priceProduct span:nth-child(1){
+        font-size: 10px;
+    }
+    .productsPoloSport-container .productsPoloSport-bottom .productsPoloSport-bottom-priceProduct span:nth-child(3){
+        font-size: 10px;
+    }
+}
+
+/*      <!--Banner UNDERWEAR container-->  --------------------------------------------------------*/
+.bannerUnderwear-container{
+    margin-top: 50px;
+    position: relative;
+}
+.bannerUnderwear-container img{
+    width: 100%;
+}
+.bannerUnderwear-container .bannerUnderwear-container-info{
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+}
+.bannerUnderwear-container .bannerUnderwear-container-info h2 {
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+.bannerUnderwear-container .bannerUnderwear-container-info p {
+    margin-bottom: 45px;
+    font-weight: 550;
+}
+.bannerUnderwear-container .bannerUnderwear-container-info a {
+    text-decoration: none;
+    color: white;
+    background: #2F5ACF;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+@media screen  and  (max-width:380px) {
+    .bannerUnderwear-container{
+        margin-top: 25px;
+    }
+    .bannerUnderwear-container img{
+        height: 300px;
+        object-fit: cover;
+    }
+    .bannerUnderwear-container .bannerUnderwear-container-info{
+        left: 20px;
+        bottom: 30%;
+    }
+    .bannerUnderwear-container .bannerUnderwear-container-info h2 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .bannerUnderwear-container .bannerUnderwear-container-info {
+        max-width: 250px; /* Đảm bảo không vượt quá 270px */
+      }
+      
+      .bannerUnderwear-container .bannerUnderwear-container-info p {
+        max-width: 100%; /* Đảm bảo không vượt quá chiều rộng của phần tử cha */
+        word-wrap: break-word; /* Tự động xuống dòng khi vượt quá */
+        font-size: 11px; /* Kích thước font chữ */
+        font-weight: 600;
+      }
+      .bannerUnderwear-container .bannerUnderwear-container-info a{
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 380px) and  (max-width:687px) {
+    .bannerUnderwear-container{
+        margin-top: 30px;
+    }
+    .bannerUnderwear-container img{
+        height: 300px;
+        object-fit: cover;
+    }
+    .bannerUnderwear-container .bannerUnderwear-container-info{
+        left: 20px;
+        bottom: 30%;
+    }
+    .bannerUnderwear-container .bannerUnderwear-container-info h2 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .bannerUnderwear-container .bannerUnderwear-container-info {
+        max-width: 280px; /* Đảm bảo không vượt quá 270px */
+      }
+      
+      .bannerUnderwear-container .bannerUnderwear-container-info p {
+        max-width: 100%; /* Đảm bảo không vượt quá chiều rộng của phần tử cha */
+        word-wrap: break-word; /* Tự động xuống dòng khi vượt quá */
+        font-size: 14px; /* Kích thước font chữ */
+        font-weight: 600;
+      }
+      
+    .bannerUnderwear-container .bannerUnderwear-container-info a{
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 687px) and (max-width: 913px) {
+    .bannerUnderwear-container{
+        margin-top: 35px;
+    }
+    .bannerUnderwear-container img {
+        height: 300px;
+        object-fit: cover;
+    }
+    .bannerUnderwear-container .bannerUnderwear-container-info {
+        left: 20px;
+        bottom: 30%;
+    }
+    .bannerUnderwear-container .bannerUnderwear-container-info h2 {
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .bannerUnderwear-container .bannerUnderwear-container-info {
+        max-width: 400px; /* Đảm bảo không vượt quá 270px */
+      }
+      
+      .bannerUnderwear-container .bannerUnderwear-container-info p {
+        max-width: 100%; /* Đảm bảo không vượt quá chiều rộng của phần tử cha */
+        word-wrap: break-word; /* Tự động xuống dòng khi vượt quá */
+        font-size: 14px; /* Kích thước font chữ */
+        font-weight: 600;
+      }
+      .bannerUnderwear-container .bannerUnderwear-container-info a{
+        padding: 10px 30px;
+        font-size: 15px;
+    }
+}
+
+/* <!--Products Man Underwear container--> -----------------------------------------*/
+.productsManUnderwear-container {
+    padding: 0 50px;
+    margin-top: 30px;
+}
+
+.productsManUnderwear-container .productsManUnderwear-top {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.productsManUnderwear-container .productsManUnderwear-top h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 650;
+}
+.productsManUnderwear-container .productsManUnderwear-top a{
+    text-transform: capitalize;
+    color: black;
+}
+.productsManUnderwear-container .productsManUnderwear-bottom{
+    margin-top: 20px;
+    
+}
+.productsManUnderwear-bottom-container{
+    display: flex;
+    justify-content: space-between;
+}
+.productsManUnderwear-container .productsManUnderwear-bottom {
+    position: relative;
+    width: 24%;
+}
+.productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-items .items-top{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+}
+.productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-items  img{
+    width: 100%;
+    border-radius: 10px;
+    height: 395px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-items .items-top .items-top-left {
+    letter-spacing: -1px;
+    font-size: 13px;
+}
+.productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-items .items-top .items-top-left  span:nth-child(3){
+    color: #2F5ACF;
+    font-weight: 600;
+}
+.productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-items .items-top .items-top-right button{
+    background-color:#009739 ;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    letter-spacing: -0.5px;
+    font-size: 10px;
+    text-transform: capitalize;
+}
+.productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-listColor{
+    display: flex;
+}
+.productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-listColor1 div{
+    background: #83504A;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    outline: 1px solid black;
+    outline-offset: 2px;
+}
+.productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-listColor2 div{
+    background:#1C1C1C;
+    width: 35px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    outline: 1px solid black;
+    outline-offset: 2px;
+}
+.productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-listColor3 div{
+    background: #404332;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    outline: 1px solid black;
+    outline-offset: 2px;
+}
+.productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-listColor4 div{
+    background: #3191C3;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    outline: 1px solid black;
+    outline-offset: 2px;
+}
+.productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-nameProduct{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-priceProduct span:nth-child(1){
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+.productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-priceProduct button{
+    background: #2F5ACF;
+    color:white;
+    font-size: 10px;
+    padding: 0 5px;
+    border-radius: 5px;
+    font-weight: 700;
+    border: 1px solid #2F5ACF;
+    margin-right: 5px;
+}
+.productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-priceProduct span:nth-child(3){
+    font-size: 14px;
+    font-weight: 300;
+   text-decoration: line-through;
+}
+.productsManUnderwear-container .productsManUnderwear-bottom-button button{
+text-transform: uppercase;
+font-size: 16px;
+padding: 10px 30px;
+border-radius: 20px;
+display: none;
+background-color: white;
+margin: 0 auto;
+margin-top: 20px;
+}
+@media screen and (max-width:687px){
+    .productsManUnderwear-container {
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+    .productsManUnderwear-displayNone-mobile{
+        display: none;
+    }
+    .productsManUnderwear-container .productsManUnderwear-bottom{
+        width: 48%;
+    }
+}
+@media screen and (max-width:1020px){
+    .productsManUnderwear-container {
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+    .productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-items  img{
+        height: 268px;
+        margin-bottom: 10px;
+    }
+    .productsManUnderwear-container .productsManUnderwear-top a{
+        display: none;
+
+    }
+    .productsManUnderwear-container .productsManUnderwear-top h3{
+        font-size: 18px;
+        font-weight: 650;
+    }
+    .productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-items .items-top .items-top-right button{
+        padding: 2px 5px;
+        font-size: 8px;
+    }
+    .productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-items .items-top{
+        top: 2px;
+    }
+    .productsManUnderwear-container  .productsManUnderwear-bottom-button button{
+        display: block;
+    }
+    .productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-nameProduct{
+        font-size: 11px;
+    }
+    .productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-priceProduct span:nth-child(1){
+        font-size: 10px;
+    }
+    .productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-priceProduct span:nth-child(3){
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:380px){
+    .productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-items .items-top .items-top-left{
+        font-size: 10px;
+        margin-right: 5px;
+    }
+    .productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-priceProduct span:nth-child(1){
+        font-size: 10px;
+    }
+    .productsManUnderwear-container .productsManUnderwear-bottom .productsManUnderwear-bottom-priceProduct span:nth-child(3){
+        font-size: 10px;
+    }
+}
+
+
+/*<!--Banner Care & Share Component--> -----------------------*/
+.container-home .BannerCare_Share{
+    width: 100%;
+    margin-top: 70px;
+}
+.container-home .BannerCare_Share img{
+    width: 100%;
+    padding: 0 50px;
+}
+@media screen and (max-width: 1020px) {
+    .container-home .BannerCare_Share{
+        margin-top: 40px;
+    }
+    .container-home .BannerCare_Share img{
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+/*<!--Banner Sale Component--> -----------------------*/
+.container-home .BannerSale-container{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+.container-home .BannerSale-container .BannerSale_left{
+    position: relative;
+}
+.container-home .BannerSale-container .BannerSale_left img{
+    width: 98.5%;
+    float: left;
+}
+.container-home .BannerSale-container .BannerSale-left-content-left{
+    position : absolute;
+    bottom: 50px;
+    left: 40px;
+    color: white;
+}
+.container-home .BannerSale-container .BannerSale-left-content-left p {
+    font-weight: 300;
+    color: #C8D8E7;
+}
+.container-home .BannerSale-container .BannerSale-left-content-left a{
+    padding: 15px 40px;
+    background: white;
+    text-decoration: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 500;
+}
+.container-home .BannerSale-container .BannerSale-left-content-left h1 {
+    font-size: 60px; /* Kích thước font chữ */
+    color: white; /* Màu chữ */
+    text-transform: uppercase; /* Chuyển thành chữ hoa */
+    margin-bottom: 50px; /* Khoảng cách dưới */
+    line-height: 1.2;
+    margin-top: 15px;
+}
+
+/*------*/
+.container-home .BannerSale-container .BannerSale_right{
+    position: relative;
+  
+}
+.container-home .BannerSale-container .BannerSale_right img{
+    width: 98.5%;
+    float: right;
+}
+.container-home .BannerSale-container .BannerSale-right-content-right{
+    position : absolute;
+    bottom: 50px;
+    left: 40px;
+    color: white;
+}
+.container-home .BannerSale-container .BannerSale-right-content-right p {
+    font-weight: 300;
+    color: #C8D8E7;
+}
+.container-home .BannerSale-container .BannerSale-right-content-right a{
+    padding: 15px 40px;
+    background: white;
+    text-decoration: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 500;
+}
+
+.container-home .BannerSale-container .BannerSale-right-content-right  h1 {
+    font-size: 60px; /* Kích thước font chữ */
+    color: white; /* Màu chữ */
+    text-transform: uppercase; /* Chuyển thành chữ hoa */
+    margin-bottom: 50px; /* Khoảng cách dưới */
+    line-height: 1.2;
+    margin-top: 15px;
+}
+@media screen and (max-width: 1020px) {
+    .container-home .BannerSale-container{
+        padding: 0 20px;
+    display: flex;
+    flex-direction: column; /* Đảm bảo các phần tử được xếp hàng ngang */
+    }
+    .container-home .BannerSale-container .BannerSale_left img{
+        width: 100%;
+    }
+    .BannerSale_left img{
+        width: 391px;
+    }
+    .container-home .BannerSale-container .BannerSale-left-content-left{
+    bottom: 30px;
+    left: 15px;
+    }
+    .container-home .BannerSale-container .BannerSale-left-content-left h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    }
+    .container-home .BannerSale-container .BannerSale-left-content-left a{
+        padding: 10px 20px;
+        font-size: 10px;
+        font-weight: 600;
+        margin-top: 30px;
+    }
+
+    /*----------------*/
+    
+    .BannerSale_right{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .container-home .BannerSale-container .BannerSale_right img{
+        width: 100%;
+    }
+    .container-home .BannerSale-container .BannerSale-right-content-right{
+    bottom: 30px;
+    left: 15px;
+    }
+    .container-home .BannerSale-container .BannerSale-right-content-right h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    }
+    .container-home .BannerSale-container .BannerSale-right-content-right a{
+        padding: 10px 20px;
+        font-size: 10px;
+        font-weight: 600;
+        margin-top: 30px;
+    }
+    
+}
+@media screen and (min-width: 1020px)  and (max-width:1030px){
+    .container-home .BannerSale-container .BannerSale-right-content-right h1{
+        font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    margin-top: 10px;
+    }
+    .container-home .BannerSale-container .BannerSale-right-content-right a{
+        padding: 10px 30px;
+    background: white;
+    text-decoration: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 500;
+    }
+    .container-home .BannerSale-container .BannerSale-left-content-left h1{
+        font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    margin-top: 10px;
+    }
+    .container-home .BannerSale-container .BannerSale-left-content-left a{
+        padding: 10px 30px;
+    background: white;
+    text-decoration: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 500;
+    }
+}
+
+/*<!--Category Product Component--> -----------------------*/
+.container-home .categoryProduct-container{
+ display: flex;
+ margin-top: 60px;
+ padding: 0 50px;
+ justify-content: space-between;
+}
+.container-home .categoryProduct-container .categoryProduct-iteams1{
+    width: 24%;
+}
+.container-home .categoryProduct-container .categoryProduct-iteams1 img{
+    width: 100%;
+}
+.container-home .categoryProduct-container .categoryProduct-iteams2 img{
+    width: 100%;
+}
+.container-home .categoryProduct-container .categoryProduct-iteams3 img{
+    width: 100%;
+}
+.container-home .categoryProduct-container .categoryProduct-iteams4 img{
+    width: 100%;
+}
+.container-home .categoryProduct-container .categoryProduct-iteams2{
+    width: 24%;
+}
+.container-home .categoryProduct-container .categoryProduct-iteams3{
+    width: 24%;
+}
+.container-home .categoryProduct-container .categoryProduct-iteams4{
+    width: 24%;
+}
+.categoryProduct-iteams1,
+.categoryProduct-iteams2,
+.categoryProduct-iteams3,
+.categoryProduct-iteams4 {
+    position: relative;
+    overflow: hidden; 
+}
+
+.categoryProduct-iteams1 img,
+.categoryProduct-iteams2 img,
+.categoryProduct-iteams3 img,
+.categoryProduct-iteams4 img {
+    width: 100%; 
+    transition: transform 0.3s ease; 
+}
+
+.categoryProduct-iteams1:hover img,
+.categoryProduct-iteams2:hover img,
+.categoryProduct-iteams3:hover img,
+.categoryProduct-iteams4:hover img {
+    transform: scale(1.2);
+}
+@media screen and (max-width: 924px) {
+    .container-home .categoryProduct-container{
+        padding: 0 20px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+       }
+       .container-home .categoryProduct-container .categoryProduct-iteams1{
+        width: 48%;
+        margin-bottom: 10px;
+    }
+    .container-home .categoryProduct-container .categoryProduct-iteams2{
+        width: 48%;
+    }
+    .container-home .categoryProduct-container .categoryProduct-iteams3{
+        width: 48%;
+    }
+    .container-home .categoryProduct-container .categoryProduct-iteams4{
+        width: 48%;
+    }
+}
+
+/*<!--Diary  Component--> -----------------------*/
+.container-home .diary-container{
+    margin-top: 50px;
+    padding: 0 50px;
+}
+.container-home .diary-container .diary-top{
+    text-align: center;
+}
+.container-home .diary-container .diary-top h2{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight :600;
+    margin-bottom: 10px;
+}
+.container-home .diary-container .diary-top p{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.container-home .diary-container .diary-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.container-home .diary-container .diary-bottom .diary-iteams{
+    width: 23%;
+    position: relative;
+}
+.container-home .diary-container .diary-bottom .diary-iteams img{
+    width: 100%;
+    border-radius: 5px;
+}
+.container-home .diary-container .diary-bottom  .diary-iteams .diary-icons{
+    position: absolute;
+    padding: 5px 10px;
+    background-color: black;
+    top: 15px;
+    right: 10px;
+    border-radius: 100px;
+}
+.container-home .diary-container .diary-bottom  .diary-iteams .diary-icons i {
+    color:white;
+    font-size: 18px;
+}
+@media screen and (max-width : 768px) {
+    .container-home .diary-container{
+        padding: 0 20px;
+    }
+    .container-home .diary-container .diary-top h2{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    .container-home .diary-container .diary-top p{
+        font-size: 14px;
+    }
+    .container-home .diary-container .diary-bottom .diary-mobile{
+        display: none;
+    }
+    .container-home .diary-container .diary-bottom .diary-iteams {
+        width: 48%;
+    }
+    .container-home .diary-container .diary-bottom .diary-iteams .diary-icons i{
+        font-size: 16px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .container-home .diary-container{
+        padding: 0 20px;
+    }
+    .container-home .diary-container .diary-top p{
+        font-size: 18px;
+    }
+}
+
+
+/*<!--Banner Discount  Component--> -----------------------*/
+.container-home .bannerDiscount-container{
+    margin-top: 80px;
+    color:white;
+    background:#273CCD;
+    padding: 30px 0;
+    text-align: center;
+}
+.container-home .bannerDiscount-container .bannerDiscount-top{
+    margin-bottom: 15px;
+}
+.container-home .bannerDiscount-container .bannerDiscount-top h1{
+    font-size: 30px;
+}
+.container-home .bannerDiscount-container .bannerDiscount-bottom button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight :600;
+}
+.container-home .bannerDiscount-container .bannerDiscount-bottom button:nth-child(1){
+    background: white;
+    color:#273CCD;
+    border: 1px solid white;
+    margin-right: 20px;
+}
+.container-home .bannerDiscount-container .bannerDiscount-bottom button:nth-child(2){
+    color:white;
+    background: #273CCD;
+    border:1px solid white;
+}
+@media screen and (max-width:768px) {
+    .container-home .bannerDiscount-container{
+        padding: 15px 0;
+    }
+    .container-home .bannerDiscount-container .bannerDiscount-top{
+        padding: 0 20px;
+    }
+    .container-home .bannerDiscount-container .bannerDiscount-top h1{
+        font-size: 23px;
+    }
+    .container-home .bannerDiscount-container .bannerDiscount-bottom{
+        display: flex;
+        padding: 0 20px;
+        width: 100%;
+
+    }
+    .container-home .bannerDiscount-container .bannerDiscount-bottom button{
+        font-size: 13px;
+        padding: 10px 15px;
+        line-height: 1;
+        font-weight: bold !important;
+        width: 48%;
+    }
+}
