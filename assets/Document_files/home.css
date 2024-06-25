@@ -1688,7 +1688,6 @@ margin-top: 20px;
 @media screen and (max-width:768px) {
     .container-home .bannerDiscount-container{
         padding: 15px 0;
-        margin-top: 30px;
     }
     .container-home .bannerDiscount-container .bannerDiscount-top{
         padding: 0 20px;
@@ -1727,7 +1726,7 @@ margin-top: 20px;
 }
 .container-home .footer-container .footer-top .footer-mid{
     width: 30%;
-    padding-left: 100px;
+
 }
 .container-home .footer-container .footer-top .footer-right{
     width: 30%;
@@ -1739,9 +1738,6 @@ margin-top: 20px;
 .container-home .footer-container .footer-top .footer-left p {
     font-size: 13px;
     margin-bottom: 25px;
-}
-.container-home .footer-container .footer-top .footer-left  i {
-    display:none;
 }
 .container-home .footer-container .footer-top .footer-left button {
     padding: 15px 40px;
@@ -1756,7 +1752,6 @@ margin-top: 20px;
  display : flex;
  align-items: center;
  margin-bottom: 15px;
- 
 }
 .container-home .footer-container .footer-top .footer-mid .footer-mid-phone i{
     font-size: 30px;
@@ -1782,112 +1777,8 @@ margin-top: 20px;
   .container-home .footer-container .footer-top .footer-right{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
    }
    .container-home .footer-container .footer-top .footer-right i {
-    font-size: 35px;
+    font-size: 45px;
    }
-
-   .container-home .footer-container .footer-bottom{
-    display: flex;
-    margin-top: 30px;
-    border-top: 1px solid gray;
-    padding-top: 30px;
-    width: 100%;
-   }
-   .container-home .footer-container .footer-bottom .footer-items{
-    width: 23%;
-    margin-bottom: 30px;
-   }
-   .container-home .footer-container .footer-bottom .footer-items h2{
-    font-size: 18px;
-    margin-bottom: 20px;
-   }
-   .container-home .footer-container .footer-bottom .footer-items p {
-    font-size: 14px;
-    margin-top: 15px;
-   }
-   .container-home .footer-container .footer-bottom .footer-items a {
-    color:white;
-    margin-bottom: 15px;
-   }
-   .container-home .footer-container .footer-bottom .footer-items i {
-    display: none;
-   }
-   @media screen and (max-width: 1023px) {
-    .container-home .footer-container .footer-top{
-        display: flex;
-        flex-direction: column;
-    }
-    .container-home .footer-container .footer-top .footer-left{
-        order: 2;
-        width: 100%;
-        border-top: 1px solid gray;
-        border-bottom: 1px solid gray;
-        display: block;
-    }
-    .container-home .footer-container .footer-top .footer-right{
-        order: 3;
-    }
-    .container-home .footer-container .footer-top{
-        padding: 0 20px;
-    }
-    .container-home .footer-container .footer-top .footer-mid{
-        padding-left: 0;
-        margin-top: 20px;
-        order:1;
-        width: 100%;
-
-    }
-    .container-home .footer-container .footer-top .footer-mid .footer-mid-phone p{
-        font-size: 12px;
-        display: block;
-    }
-    .container-home .footer-container .footer-top .footer-left h3{
-        margin-top: 20px;
-    }
-    .container-home .footer-container .footer-top .footer-left  i {
-        display:inline-block;
-       margin-left: 10px;
-    }
-    .container-home .footer-container .footer-top .footer-left p{
-        font-size: 12px;
-    }
-    .container-home .footer-container .footer-top .footer-left button{
-    padding: 13px 40px;
-    background: white;
-    color: black;
-    font-weight: bold;
-    border-radius: 40px;
-    font-size: 18px;
-    border: 1px solid white;
-    margin-bottom: 20px;
-    }
-    .container-home .footer-container .footer-top .footer-right {
-        margin-top: 20px;
-        width: 100%;
-        justify-content: space-between;
-    }
-    .container-home .footer-container .footer-bottom p , a {
-        display: none;
-        flex-direction: column;       
-    }
-    .container-home .footer-container .footer-bottom{
-        display: flex;
-        flex-direction: column;
-    }
-    .container-home .footer-container .footer-bottom .footer-items h2{
-        font-size: 14px;
-    }
-    .container-home .footer-container .footer-bottom .footer-items{
-        padding: 0 20px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .container-home .footer-container .footer-bottom .footer-items i {
-        display: block;
-       }
-   }
-   
-   
